@@ -3,7 +3,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Novo estado para o menu do celular
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,8 +69,8 @@ export default function Header() {
               Portfolio
             </a>
             <a
-              href="#experiense"
-              onClick={(e) => scrollToSection(e, "experiense")}
+              href="#experience"
+              onClick={(e) => scrollToSection(e, "experience")}
               className="hover:text-white transition-colors"
             >
               Experiencia
@@ -149,8 +149,8 @@ export default function Header() {
             Portfolio
           </a>
           <a
-            href="#experiense"
-            onClick={(e) => scrollToSection(e, "experiense")}
+            href="#experience"
+            onClick={(e) => scrollToSection(e, "experience")}
             className="hover:text-brand-coral transition-colors"
           >
             Experiencia
