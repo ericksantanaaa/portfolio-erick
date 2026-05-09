@@ -31,7 +31,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="bg-dark-card py-24 w-full border-t border-white/5">
+    <section id="experiense" className="bg-dark-card py-24 w-full border-t border-white/5">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-30">
           {experiences.map((exp, index) => (

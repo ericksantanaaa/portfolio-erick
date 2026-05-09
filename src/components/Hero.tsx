@@ -2,7 +2,7 @@ import fotoErick from "../assets/foto-erick.jpeg";
 
 export default function Hero() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center bg-dark-bg overflow-hidden">
+    <main id="home" className="relative min-h-screen flex items-center justify-center bg-dark-bg overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
         <h2 className="text-[12vw] font-black flex gap-[30vw] leading-none tracking-tighter">
           <span className="text-white opacity-95">Erick</span>
@@ -27,7 +27,8 @@ export default function Hero() {
               . Freelancer
             </span>
             <p className="text-white text-xl md:text-2xl max-w-[280px] font-medium leading-tight">
-              Get in touch for freelance projects.
+              Disponível para projetos freelance. Entre em contato para
+              discutirmos como posso ajudar a tirar sua ideia do papel.
             </p>
           </div>
 
@@ -36,8 +37,8 @@ export default function Hero() {
               . Developer
             </span>
             <p className="text-white text-xl md:text-2xl max-w-[280px] font-medium leading-tight">
-              Erick Santana, a full-stack developer based in Brazil, with a
-              strong focus on automation systems and modern web interfaces.
+              Erick Santana, desenvolvedor full-stack focado em sistemas de
+              automação e criação de interfaces web modernas e intuitivas.
             </p>
           </div>
         </div>

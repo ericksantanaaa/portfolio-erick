@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark-bg: #1A1A1A;
+  --color-dark-bg: #1a1a1a;
   --color-dark-card: #333333;
-  --color-brand-coral: #FF6B52;
+  --color-brand-coral: #ff6b52;
 }
 
-/* Aplicando o fundo no corpo do site */
 body {
   background-color: var(--color-dark-bg);
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -41,7 +41,7 @@ export default function Contact() {
     },
     {
       name: "LinkedIn",
-      value: "in/ericksantana",
+      value: "in/ericksantanaaa",
       icon: (
         <svg
           viewBox="0 0 24 24"
