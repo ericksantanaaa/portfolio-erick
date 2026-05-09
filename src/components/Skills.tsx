@@ -1,15 +1,10 @@
-// src/components/Skills.tsx
-
 export default function Skills() {
   return (
     <section className="bg-dark-card py-24 w-full">
-      {/* Usamos container mx-auto para centralizar o bloco.
-          O grid-cols-3 garante que cada título de baixo "mire" no elemento de cima.
-      */}
+
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 items-start">
           
-          {/* Coluna 1: Alinhada com .Freelancer */}
           <div className="flex flex-col items-start md:pl-4">
             <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 self-start pb-1 mb-10">
               . Working Experience
@@ -32,7 +27,6 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* Coluna 2: Alinhada com o Círculo Central (.Command On) */}
           <div className="flex flex-col items-center md:items-center">
             <div className="flex flex-col items-start w-fit">
                 <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 self-start pb-1 mb-10">
@@ -48,7 +42,6 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* Coluna 3: Alinhada com .Developer */}
           <div className="flex flex-col items-start md:items-end md:pr-4">
             <div className="flex flex-col items-start w-fit">
                 <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 self-start pb-1 mb-10">
