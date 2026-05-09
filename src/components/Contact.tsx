@@ -62,7 +62,7 @@ export default function Contact() {
     },
     {
       name: "GitHub",
-      value: "github.com/erick",
+      value: "github.com/ericksantanaaa",
       icon: (
         <svg
           viewBox="0 0 24 24"
