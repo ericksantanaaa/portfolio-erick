@@ -1,7 +1,7 @@
 import logoFacens from "../assets/logo-facens.jpg";
 import logoEtec from "../assets/logo-etec.png";
 import logoAssociacao from "../assets/logo-associacao.png";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'; // Importação do Lottie
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Academic() {
   const courses = [
@@ -32,13 +32,12 @@ export default function Academic() {
   ];
 
   return (
-    <section id="academic" className="bg-dark-bg py-24 w-full relative overflow-hidden">
+    <section
+      id="academic"
+      className="bg-dark-bg py-24 w-full relative overflow-hidden"
+    >
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        
-        {/* Container principal flexível (Lado a lado no Desktop, Empilhado no Mobile) */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          
-          {/* LADO ESQUERDO: Lista de Escolaridades */}
           <div className="flex flex-col gap-12 w-full md:w-2/3 max-w-4xl">
             {courses.map((course, index) => (
               <div
@@ -74,7 +73,6 @@ export default function Academic() {
             ))}
           </div>
 
-          {/* LADO DIREITO: Animação Lottie */}
           <div className="w-full md:w-1/3 flex justify-center items-center mt-12 md:mt-0">
             <DotLottieReact
               src="https://lottie.host/b97e378b-976d-4f26-9c1f-c76810862ca3/HBT2zSzgg2.lottie"
@@ -83,7 +81,6 @@ export default function Academic() {
               className="w-[350px] md:w-[450px] lg:w-[600px] opacity-90"
             />
           </div>
-
         </div>
       </div>
 

@@ -2,16 +2,19 @@ import fotoErick from "../assets/foto-erick.jpeg";
 
 export default function Hero() {
   return (
-    <main id="home" className="relative min-h-screen flex items-center justify-center bg-dark-bg overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
-        <h2 className="text-[12vw] font-black flex gap-[30vw] leading-none tracking-tighter">
+    <main
+      id="home"
+      className="relative min-h-screen flex flex-col md:flex-row items-center justify-center bg-dark-bg overflow-hidden pt-24 pb-12 md:pt-0 md:pb-0"
+    >
+      <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none select-none z-0">
+        <h2 className="text-[24vw] md:text-[12vw] font-black flex flex-col md:flex-row md:gap-[30vw] items-center leading-none tracking-tighter">
           <span className="text-white opacity-95">Erick</span>
           <span className="text-brand-coral opacity-95">Silva</span>
         </h2>
       </div>
 
-      <div className="relative z-10 scale-[0.8] md:scale-100 transition-transform">
-        <div className="w-[60vw] h-[60vw] max-w-[420px] max-h-[420px] rounded-full border-[10px] md:border-[12px] border-dark-card bg-[#222] shadow-2xl flex items-center justify-center overflow-hidden">
+      <div className="relative z-10 transition-transform mt-4 mb-4 md:mb-0">
+        <div className="w-[65vw] h-[65vw] sm:w-[50vw] sm:h-[50vw] max-w-[420px] max-h-[420px] rounded-full border-[8px] md:border-[12px] border-dark-card bg-[#222] shadow-2xl flex items-center justify-center overflow-hidden">
           <img
             src={fotoErick}
             alt="Erick Silva"
@@ -20,31 +23,34 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        <div className="container mx-auto h-full relative">
-          <div className="absolute top-[65%] left-[5%] md:left-[10%] pointer-events-auto">
-            <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 pb-1 mb-6 inline-block">
-              . Freelancer
-            </span>
-            <p className="text-white text-xl md:text-2xl max-w-[280px] font-medium leading-tight">
-              Disponível para projetos freelance. Entre em contato para
-              discutirmos como posso ajudar a tirar sua ideia do papel.
-            </p>
-          </div>
+      <h2 className="md:hidden relative z-10 text-[18vw] sm:text-7xl font-black flex flex-col items-center leading-none tracking-tighter mb-8 text-center w-full">
+        <span className="text-white">Erick</span>
+        <span className="text-brand-coral">Silva</span>
+      </h2>
 
-          <div className="absolute top-[65%] right-[5%] md:right-[10%] pointer-events-auto text-left">
-            <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 pb-1 mb-6 inline-block">
-              . Developer
-            </span>
-            <p className="text-white text-xl md:text-2xl max-w-[280px] font-medium leading-tight">
-              Erick Santana, desenvolvedor full-stack focado em sistemas de
-              automação e criação de interfaces web modernas e intuitivas.
-            </p>
-          </div>
+      <div className="z-20 w-full px-6 flex flex-col items-center gap-10 md:gap-8 md:block md:absolute md:inset-0 pointer-events-none">
+        <div className="pointer-events-auto md:absolute md:top-[65%] md:left-[10%] flex flex-col items-center md:items-start text-center md:text-left">
+          <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 pb-1 mb-4 md:mb-6 inline-block">
+            . Freelancer
+          </span>
+          <p className="text-white text-lg md:text-2xl max-w-[280px] font-medium leading-tight">
+            Disponível para projetos freelance. Entre em contato para
+            discutirmos como posso ajudar a tirar sua ideia do papel.
+          </p>
+        </div>
+
+        <div className="pointer-events-auto md:absolute md:top-[65%] md:right-[10%] flex flex-col items-center md:items-start text-center md:text-left">
+          <span className="text-brand-coral font-bold uppercase tracking-[0.2em] text-[11px] border-b border-brand-coral/50 pb-1 mb-4 md:mb-6 inline-block">
+            . Developer
+          </span>
+          <p className="text-white text-lg md:text-2xl max-w-[280px] font-medium leading-tight">
+            Desenvolvedor full-stack focado em sistemas de automação e criação
+            de interfaces web modernas e intuitivas.
+          </p>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-10 z-20">
+      <div className="z-20 mt-10 w-full flex justify-center md:w-auto md:block md:mt-0 md:absolute md:bottom-10 md:left-10 pointer-events-auto">
         <a
           href="/Erick-Santana-Dev.pdf"
           download="Erick-Santana-Dev.pdf"
@@ -76,8 +82,8 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="absolute top-1/4 left-10 w-8 h-8 bg-white/5 rotate-12 z-0"></div>
-      <div className="absolute bottom-1/3 right-20 w-12 h-12 bg-white/5 -rotate-12 z-0"></div>
+      <div className="hidden md:block absolute top-1/4 left-10 w-8 h-8 bg-white/5 rotate-12 z-0"></div>
+      <div className="hidden md:block absolute bottom-1/3 right-20 w-12 h-12 bg-white/5 -rotate-12 z-0"></div>
     </main>
   );
 }
